@@ -15,6 +15,9 @@ body {
 .list {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 /* Цвет оснвнго текста #757575 */
 /* Вторичный цвет текста #212121*/
 /* Первичный цвет фона  #FFFFFF */
@@ -22,38 +25,38 @@ body {
 /* Акцент #2196F3*/
 /*Цвет footer #2F303A  */
 
-.Logo {
+.logo {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
+  font-style: 400;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.Logo-site {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.logo-site {
   color: #000000;
 }
-.Logo-site-part {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.logo-site-part {
   color: var(--primary-background-color);
 }
 /*Site-nav */
-.site-nav .link,
-.contacts-nav .link {
+.site-nav .link {
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.contacts-nav .link {
+  font-style: 400;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-colo);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -61,9 +64,7 @@ body {
 .contacts-nav .link:focus {
   color: var(--accent-text-color);
 }
-.site-nav.link.current {
-  color: var(--accent-text-color);
-}
+
 /*Герой */
 .hero {
   background-color: var(--bg-hero-footer-color);
@@ -75,6 +76,7 @@ body {
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--primary-background-color);
 }
 /* section */
@@ -98,10 +100,12 @@ body {
 
 /* Приемущества */
 .benefits-title {
+  font-style: 400;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--title-text-color);
 }
 .benefits-text {
@@ -128,7 +132,7 @@ body {
   background-color: var(--bg-hero-footer-color);
 }
 .addres-footer {
-  font-family: Roboto;
+  font-style: 400;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -143,15 +147,21 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* Стили для Партфолио */
+.button-filter {
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
 .button-filter:hover,
 .button-filter:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-text-color);
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+}
+.works {
+  color: #ffffff;
 }
 .works-title {
   font-weight: 700;
